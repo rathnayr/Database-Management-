@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/20b90c54-2453-4ab1-9df7-904f9d6a95a6)![image](https://github.com/user-attachments/assets/fee6fe9b-06b1-48bb-a26d-8bb74dd69aa6)# Week 03
+# Week 03
 ## Exercise 03
 
 ### 1. Write a query that lists the names of all countries and airports. Select Iceland as the country and assign the following aliases: name column of the country table:  alias "country name" name column of the airport table: alias "airport name" <br>
