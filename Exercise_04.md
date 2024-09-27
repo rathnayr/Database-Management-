@@ -28,6 +28,7 @@ where airport.name like "%Hels%";
 select name, screen_name
 from goal left join goal_reached on goal.id = goal_reached.goal_id
 left join game on goal_reached.game_id = game.id;
+
 ![5](https://github.com/user-attachments/assets/1e0c5177-30e9-4317-9e0f-4f7b80e3ac3f)
 
 
