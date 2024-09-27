@@ -9,6 +9,7 @@ WHERE screen_name = "Vesa";
 
 ### 2. Prepare your own database for the project by deleting all dummy data relating to the game state. To maintain referential integrity, you have to delete the data in a specific order. Do you have to delete data first from the game table or from the goal_reached table? <br>
 a. goal_reached
+
 ![2](https://github.com/user-attachments/assets/7fc6b4bf-8ed3-4c08-8d5a-0c79dcbf90ee)
 
 ### 3. Delete the dummy data from the goal_reached table. <br>
