@@ -19,6 +19,7 @@ select game_id from goal_reached
 where goal_id in (
 select id from goal
 where name = "CLOUDS"));
+
 ![3](https://github.com/user-attachments/assets/c1f9d835-1c71-4244-9855-008ab78839f5)
 
 ### 4. List all countries that have no airports. <br>
@@ -34,6 +35,7 @@ select goal_id from goal_reached
 where game_id in (
 select id from game
 where screen_name = "Heini"));
+
 ![5](https://github.com/user-attachments/assets/e377545c-c28e-4e22-80d6-369ab09b4e94)
 
 
