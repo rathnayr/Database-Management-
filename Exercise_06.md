@@ -33,6 +33,7 @@ where airport.iso_country = country.iso_country
 group by country.iso_country
 order by count(*) desc
 limit 50;
+
 ![5](https://github.com/user-attachments/assets/b45f449b-0cda-4a63-a6a4-7e2425a30f6d)
 
 ### 6. List the countries with more than 1000 airports. Use the iso_country field in the query. <br>
@@ -41,6 +42,7 @@ from airport, country
 where airport.iso_country = country.iso_country
 group by country.iso_country
 having count(*) > 1000;
+
 ![6](https://github.com/user-attachments/assets/2dcc0a0f-b304-4daf-8f45-40acbd478928)
 
 ### 7. Print out the name of the highest airport in the world. <br>
