@@ -1,22 +1,24 @@
 # Week 03
-## Exercise 02
-### Write a query that prints out all the columns in the goal table. The output should look as follows: <br>
-select*from goal; 
 
+## Exercise 02
+### 1. Write a query that prints out all the columns in the goal table. The output should look as follows: <br>
+select*from goal; 
 ![1](https://github.com/user-attachments/assets/0ed8909a-164a-49b4-8d6a-35ca1257c7fd)
 
 
-### Write a query that prints out the name and type of each airport in Finland. The country code for Finland is: FI. Expected output: <br>
+### 2. Write a query that prints out the name and type of each airport in Finland. The country code for Finland is: FI. Expected output: <br>
 select name, type from airport where iso_country = "FI";
 ![2](https://github.com/user-attachments/assets/02d2bbf0-23b6-4dc7-9659-f1a4b9521c18)
 
-### Write a query that prints out the names of all Finnish airports in alphabetical order. The country code for Finland is: FI. The output should look as follows (Note that the image has been cropped to fit the screen): <br>
+### 3. Write a query that prints out the names of all Finnish airports in alphabetical order. The country code for Finland is: FI. The output should look as follows (Note that the image has been cropped to fit the screen): <br>
 SELECT name FROM airport WHERE iso_country = 'FI' ORDER BY name ASC;
-
 ![3](https://github.com/user-attachments/assets/4e97e1b4-8344-474b-8e20-54df934d57e7)
 
-### Write a query that prints out the name and type of each Finnish airport. Order the result first by type and secondly by name. The output should be as follows: <br>
-SELECT name FROM airport WHERE iso_country = 'FI' ORDER BY name ASC;
+### 4. Write a query that prints out the name and type of each Finnish airport. Order the result first by type and secondly by name. The output should be as follows: <br>
+select name, type from airport where iso_country = 'FI' order by type, name;
+![4](https://github.com/user-attachments/assets/8fd7b248-a809-46b0-8141-0c1cd0b74ce1)
 
-![4](https://github.com/user-attachments/assets/4187ecee-031b-4948-acab-338b813d6cce)
+### 5. Write a query that prints out the names of all countries that start with the letter F from the country table. The output should look as follows: <br>
+select name from country where name like 'F%';
+![image](https://github.com/user-attachments/assets/a68f5bc2-0987-454d-b4ee-a95832b1c28e)
 
