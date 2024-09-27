@@ -1,4 +1,4 @@
-## Week 02
+## Week 03
 ### Write a query that prints out all the columns in the goal table. The output should look as follows: <br>
 select*from goal; 
 
