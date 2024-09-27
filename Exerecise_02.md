@@ -34,3 +34,16 @@ select location from game where screen_name = "Vesa";
 select co2_consumed from game where screen_name = "Ilkka";
 ![8](https://github.com/user-attachments/assets/cf6c82c3-e1ed-4f4a-9133-21504f1bfa59)
 
+### 9. What is the original CO2 budget? Print out the CO2 budget value only once. The output should be as follows: <br>
+SELECT DISTINCT co2_budget FROM game;
+![9](https://github.com/user-attachments/assets/81461385-f7a9-48c6-9a78-6002b4122f38)
+
+### 10. How much of his CO2 budget does Ilkka have left? Complete the query so that the result includes the following fields: screen_name, co2_budget, co2_consumed and co2_left. <br>
+select screen_name, co2_budget, co2_consumed, co2_budget - co2_consumed as co2_left from game;
+![10](https://github.com/user-attachments/assets/5c7c604a-2766-43bb-b6ed-c34123d65b4d)
+
+
+
+
+
+
