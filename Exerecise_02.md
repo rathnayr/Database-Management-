@@ -10,4 +10,8 @@ select*from goal;
 select name, type from airport where iso_country = "FI";
 ![2](https://github.com/user-attachments/assets/02d2bbf0-23b6-4dc7-9659-f1a4b9521c18)
 
+### Write a query that prints out the names of all Finnish airports in alphabetical order. The country code for Finland is: FI. The output should look as follows (Note that the image has been cropped to fit the screen): <br>
+SELECT name FROM airport WHERE iso_country = 'FI' ORDER BY name ASC;
+
+![3](https://github.com/user-attachments/assets/bfd494e3-4e19-426d-9b11-cc294aef721e)
 
