@@ -1,41 +1,27 @@
 # Week 04
 ## Exercise 05
 ### 1. One country has an airport where the airport name begins with the word "Satsuma". Print out the name of the country. <br>
-select name from country where iso_country in(
-select iso_country from airport where name like 'Satsuma%');
-![1](https://github.com/user-attachments/assets/e022927c-ebef-4c60-90dc-79d91bf872a0)
+SELECT country.name FROM country WHERE country.iso_country IN ( SELECT airport.iso_country FROM airport WHERE airport.name LIKE "Satsuma%" );
+
+![5-1](https://github.com/user-attachments/assets/c34b4ba7-338e-4bf1-b1ae-fcf77393cfa3)
 
 ### 2. List the names of all airports in Monaco.<br>
-select name from airport
-where iso_country in(
-select iso_country from country
-where name = 'Monaco');
-![2](https://github.com/user-attachments/assets/e42071db-92c1-4b33-b839-4c817bbf8649)
+SELECT airport.name FROM airport WHERE airport.iso_country IN ( SELECT country.iso_country FROM country WHERE country.name = "Monaco" );
+
+![5-2](https://github.com/user-attachments/assets/66efcd2d-0e83-4612-9130-bc38e355378a)
 
 ### 3. List the names of all players who have achieved the clouds goal. <br>
-select screen_name from game
-where id in (
-select game_id from goal_reached
-where goal_id in (
-select id from goal
-where name = "CLOUDS"));
+SELECT game.screen_name FROM game WHERE game.id IN ( SELECT goal_reached.game_id FROM goal_reached WHERE goal_reached.goal_id IN ( SELECT goal.id FROM goal WHERE goal.name = "CLOUDS" ));
 
-![3](https://github.com/user-attachments/assets/c1f9d835-1c71-4244-9855-008ab78839f5)
+![5-3](https://github.com/user-attachments/assets/b6362a71-d050-451d-9556-3c49ecaaf4ff)
 
 ### 4. List all countries that have no airports. <br>
-select name from country
-where iso_country not in(
-select iso_country from airport);
-![4](https://github.com/user-attachments/assets/a3193db6-f268-4426-ae3c-074df36829d5)
+SELECT country.name FROM country WHERE country.iso_country NOT IN ( SELECT DISTINCT airport.iso_country FROM airport );
+
+![5-4](https://github.com/user-attachments/assets/549ec846-0a5c-42e6-a535-1dfaf8df871b)
 
 ### 5. Which weather goals has Heini not achieved yet? <br>
-select name from goal
-where id not in(
-select goal_id from goal_reached
-where game_id in (
-select id from game
-where screen_name = "Heini"));
+SELECT goal.name FROM goal WHERE goal.id NOT IN ( SELECT goal_reached.goal_id FROM goal_reached WHERE goal_reached.game_id IN ( SELECT game.id FROM game WHERE game.screen_name = "Heini" ));
 
-![5](https://github.com/user-attachments/assets/e377545c-c28e-4e22-80d6-369ab09b4e94)
-
+![5-5](https://github.com/user-attachments/assets/e505fe39-3eed-4127-b33a-4ee45afc3983)
 
