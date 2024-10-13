@@ -4,7 +4,8 @@
 ### 1. Write a query that prints out all the columns in the goal table. The output should look as follows: <br>
 select*from goal; 
 
-![2-1](https://github.com/user-attachments/assets/8780f7b4-68ff-4bd3-9824-21de9f2f649b)
+![image](https://github.com/user-attachments/assets/b7b29066-e29e-458d-9617-dd5cf319a74b)
+
 
 ### 2. Write a query that prints out the name and type of each airport in Finland. The country code for Finland is: FI. Expected output: <br>
 select name, type from airport where iso_country = "FI";
